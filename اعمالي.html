@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>معرض أعمالي</title>
+  <link rel="stylesheet" href="خالد.css">
+</head>
+<body>
+  <header>
+    <h1>أعمالي</h1>
+    <nav>
+      <ul>
+        <li><a href="خالد.html">الرئيسية</a></li>
+        <li><a href="من انا.html">من أنا</a></li>
+        <li><a href="اعمالي.html">أعمالي</a></li>
+        <li><a href="تواصل.html">تواصل</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="portfolio">
+    <div class="card">
+      <img src="صور/شعار خالد خلفية تلفون.jpg" alt="شعار خالد خلفية تلفون.jpg">
+      <h3>شعار خالد خلفية تلفون.jpg</h3>
+      <div class="buttons">
+        <a href="صور/شعار خالد خلفية تلفون.jpg" download>تحميل</a>
+        <button onclick="previewImage('صور/شعار خالد خلفية تلفون.jpg')">معاينة</button>
+      </div>
+    </div>
+  
+
+    <div class="card">
+      <img src="صور/شعار خالد.jpg" alt="شعار خالد.jpg">
+      <h3>شعار خالد.jpg</h3>
+      <div class="buttons">
+        <a href="صور/شعار خالد.jpg" download>تحميل</a>
+        <button onclick="previewImage('صور/شعار خالد.jpg')">معاينة</button>
+      </div>
+    </div>
+  
+
+    <div class="card">
+      <img src="صور/غلاف فولدر عرضي 1.jpg" alt="غلاف فولدر عرضي 1.jpg">
+      <h3>غلاف فولدر عرضي 1.jpg</h3>
+      <div class="buttons">
+        <a href="صور/غلاف فولدر عرضي 1.jpg" download>تحميل</a>
+        <button onclick="previewImage('صور/غلاف فولدر عرضي 1.jpg')">معاينة</button>
+      </div>
+    </div>
+  
+
+    <div class="card">
+      <img src="صور/شعار خالد خلفية لابتوب.jpg" alt="شعار خالد خلفية لابتوب.jpg">
+      <h3>شعار خالد خلفية لابتوب.jpg</h3>
+      <div class="buttons">
+        <a href="صور/شعار خالد خلفية لابتوب.jpg" download>تحميل</a>
+        <button onclick="previewImage('صور/شعار خالد خلفية لابتوب.jpg')">معاينة</button>
+      </div>
+    </div>
+  
+
+    <div class="card">
+      <img src="صور/عيد مبارك.jpg" alt="عيد مبارك.jpg">
+      <h3>عيد مبارك.jpg</h3>
+      <div class="buttons">
+        <a href="صور/عيد مبارك.jpg" download>تحميل</a>
+        <button onclick="previewImage('صور/عيد مبارك.jpg')">معاينة</button>
+      </div>
+    </div>
+  </main>
+
+  <div id="popup" class="popup" onclick="closePreview()">
+    <img id="popup-img" src="" alt="معاينة">
+  </div>
+
+  <footer>
+    <p>© 2025 - جميع الحقوق محفوظة</p>
+  </footer>
+
+  <script>
+    function previewImage(src) {
+      document.getElementById('popup-img').src = src;
+      document.getElementById('popup').style.display = 'flex';
+    }
+    function closePreview() {
+      document.getElementById('popup').style.display = 'none';
+    }
+  </script>
+</body>
+</html>
